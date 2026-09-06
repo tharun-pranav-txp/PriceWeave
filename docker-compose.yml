@@ -1,0 +1,7 @@
+services:
+  scraper:
+    build: 
+      context: ./scraper
+    container_name: priceweave_scraper
+    volumes:
+      - ./scraper/app:/app/app
